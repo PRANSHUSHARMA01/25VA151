@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD EXPERIMENT 4</title>
+    <style>
+        td {
+            border: 0;
+        }
+
+        td input {
+            padding: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table align="center" cellpadding="10" cellspacing="10" width="100%" border="4">
+        <caption>
+            <h2>HOTEL ROOM BOOKING FORM</h2>
+
+
+        <tr>
+            <td>NAME:</td>
+            <td><input type="text" name="name" placeholder="Enter Your Name" /></td>
+        </tr>
+        <tr>
+            <td>EMAIL:</td>
+            <td><input type="email" name="email" placeholder="Enter Your Email" required /></td>
+        </tr>
+        <tr>
+            <td>PHONE NUMBER:</td>
+            <td><input type="tel" name="phone" placeholder="Enter Your Phone Number" required /></td>
+        </tr>
+        <tr>
+            <td>CHECK-IN DATE:</td>
+            <td><input type="date" name="checkin" required /></td>
+        </tr>
+        <tr>
+            <td>CHECK-OUT DATE:</td>
+            <td><input type="date" name="checkout" required /></td>
+        </tr>
+        <tr>
+            <td>ROOM TYPE</td>
+            <td>
+                <select name="roomtype" required>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>NUMBER OF GUESTS:</td>
+            <td><input type="number" name="guests" min="1" max="" required /></td>
+        </tr>
+        <tr>
+            <td>SPECIAL REQUESTS:</td>
+            <td><textarea name="requests" rows="4" cols="30"
+                    placeholder="Enter any special requests here..."></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="Submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </td>
+
+
+    </table>
