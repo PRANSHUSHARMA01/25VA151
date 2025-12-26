@@ -3,61 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Product Page</title>
-    <link rel="stylesheet" href="ex6.css">
+    <title>E-commerce Navbar</title>
+    <style>
+        
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+       
+        .navbar {
+            display: flex;              
+            justify-content: space-between;
+            align-items: center;        
+            background-color: #232f3e;  
+            padding: 15px 30px;
+            color: white;
+        }
+
+        
+        .logo {
+            font-size: 1.8rem; 
+            font-weight: bold;
+            color: white;   
+            
+        }
+
+        
+        .nav-links {
+            display: flex;     
+            list-style: none;  
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+           
+        }
+
+       
+
+        
+        @media (max-width: 768px) {
+            
+            .navbar {
+                flex-direction: column; 
+                align-items: flex-start; 
+                padding: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column; 
+                width: 100%;            
+                margin-top: 15px;
+                        
+                
+                display: flex; 
+            }
+
+            .nav-links li {
+                margin: 10px 0;        
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #3a4a5e;
+                padding-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-    <header >
-        <h1>shoekart.com</h1>
-    </header>
-    </div>
 
-    <div class="product-container">
+    <nav class="navbar">
+        <div class="logo">Shoekart.com</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="product-image">
-            <img src="New Image.jpg" alt="Product Image">
-        </div>
-
-        <div class="product-details">
-            <h2 class="product-title">Nike Jordan Shoes</h2>
-            <p class="product-description">
-                Experience the ultimate in style and performance with Nike Jordan Shoes. 
-            </p>
-
-            <p class="price">₹20,000</p>
-
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-    <div class="product-container">
-
-        <div class="product-image">
-            <img src="AIR+FORCE+1+'07+LV8.jpg" alt="Product Image">
-        </div>
-
-        <div class="product-details">
-            <h2 class="product-title">Nike Air Force </h2>
-            <p class="product-description">
-                Experience the ultimate in style and performance with Nike Airforce Shoes. 
-            </p>
-
-            <p class="price">₹25,000</p>
-
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
+    <div style="padding: 20px; text-align: center;">
+        <h1>Welcome to Shoekart</h1>
+        <p>it is a responsive website you can change the display size to see the effect</p>
     </div>
 
 </body>
-</html>   
+</html>
+
+
+
+
+
+
+
